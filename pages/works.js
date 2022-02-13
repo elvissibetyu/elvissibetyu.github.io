@@ -18,7 +18,7 @@ const Works = () => (
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section>
-          <WorkGridItem id="inkdrop" title="Mooi.Salons" thumbnail={mooi}>
+          <WorkGridItem id="mooi" title="Mooi.Salons" thumbnail={mooi}>
             An application for clients to book appointments to any salon registered on the app in their city.
             The app also gives salon owners the platform to reach a bigger audience
           </WorkGridItem>
@@ -73,4 +73,4 @@ const Works = () => (
 )
 
 export default Works
-export { getServerSideProps } from '../components/chakra'
+export { getInitialProps } from '../components/chakra'

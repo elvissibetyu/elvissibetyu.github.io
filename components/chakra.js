@@ -18,7 +18,7 @@ import {
     )
   }
   
-  export async function getServerSideProps({ req }) {
+  export async function getInitialProps({ req }) {
     return {
       props: {
         cookies: req.headers.cookie ?? ''

@@ -1,5 +1,5 @@
 import { ChevronRightIcon } from '@chakra-ui/icons';
-import { Container, Box, Heading, Image, Link, useColorModeValue, Button } from '@chakra-ui/react'
+import { Container, Box, Heading, Link, useColorModeValue, Button } from '@chakra-ui/react'
 import  NextLink  from 'next/link';
 import Paragraph from '../components/paragraph';
 import Section from '../components/section';
@@ -25,7 +25,8 @@ const Page = () => {
                         mt={{base: 4, md: 0}} 
                         ml={{md: 6}} 
                         align="center">
-                        <Image 
+                         {/* eslint-disable-next-line @next/next/no-img-element */}
+                        <img 
                             borderColor="whiteAlpha.800" 
                             borderWidth={2}
                             borderStyle="solid"
