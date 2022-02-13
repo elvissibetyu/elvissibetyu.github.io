@@ -12,45 +12,43 @@ import thumbStyly from '../public/images/works/styly_eyecatch.png'
 import thumbPichu2 from '../public/images/works/pichu2_eyecatch.png'
 import thumbFreeDBTagger from '../public/images/works/freedbtagger_eyecatch.png'
 import thumbAmembo from '../public/images/works/amembo_eyecatch.png'
+import mooi from '../public/images/works/mooi.png';
+import commerce from '../public/images/works/commerce.png';
+import intsika from '../public/images/works/intsika.png';
+import greenoit from '../public/images/works/greenoit.png';
+import servlink from '../public/images/works/servlink.png';
 
 const Works = () => (
   <Layout title="Works">
     <Container>
       <Heading as="h3" fontSize={20} mb={4}>
-        Works
+        Personal Projects
       </Heading>
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section>
-          <WorkGridItem id="inkdrop" title="Inkdrop" thumbnail={thumbInkdrop}>
-            A Markdown note-taking app with 100+ plugins, cross-platform and
-            encrypted data sync support
+          <WorkGridItem id="inkdrop" title="Mooi.Salons" thumbnail={mooi}>
+            An application for clients to book appointments to any salon registered on the app in their city.
+            The app also gives salon owners the platform to reach a bigger audience
           </WorkGridItem>
         </Section>
         <Section>
           <WorkGridItem
             id="walknote"
-            title="walknote"
-            thumbnail={thumbWalknote}
+            title="Intsika.Edu.App"
+            thumbnail={intsika}
           >
-            Music recommendation app for iOS
+            An app that connects matriculants and also allow them to find tutors. Material to help learners study is also available
           </WorkGridItem>
         </Section>
 
         <Section delay={0.1}>
           <WorkGridItem
             id="fourpainters"
-            title="The four painters"
-            thumbnail={thumbFourPainters}
+            title="mooi.ecommerce"
+            thumbnail={commerce}
           >
-            A video work generated with deep learning, imitating famous four
-            painters like Van Gogh
-          </WorkGridItem>
-        </Section>
-        <Section delay={0.1}>
-          <WorkGridItem id="menkiki" thumbnail={thumbMenkiki} title="Menkiki">
-            An app that suggests ramen(noodle) shops based on a given photo of
-            the ramen you want to eat
+            An application for buying beauty products online.
           </WorkGridItem>
         </Section>
       </SimpleGrid>
@@ -59,7 +57,7 @@ const Works = () => (
         <Divider my={6} />
 
         <Heading as="h3" fontSize={20} mb={4}>
-          Collaborations
+          Other Projects
         </Heading>
       </Section>
 
@@ -67,46 +65,15 @@ const Works = () => (
         <Section delay={0.3}>
           <WorkGridItem
             id="modetokyo"
-            thumbnail={thumbModeTokyo}
-            title="mode.tokyo"
+            thumbnail={greenoit}
+            title="Greenoit"
           >
-            The mode magazine for understanding to personally enjoy Japan
+            An application to request collection of recycled waste and make money from the recycled material
           </WorkGridItem>
         </Section>
         <Section delay={0.3}>
-          <WorkGridItem id="styly" thumbnail={thumbStyly} title="Styly">
-            A VR Creative tools for fashion brands
-          </WorkGridItem>
-        </Section>
-      </SimpleGrid>
-
-      <Section delay={0.4}>
-        <Divider my={6} />
-
-        <Heading as="h3" fontSize={20} mb={4}>
-          Old works
-        </Heading>
-      </Section>
-
-      <SimpleGrid columns={[1, 1, 2]} gap={6}>
-        <Section delay={0.5}>
-          <WorkGridItem id="pichu2" thumbnail={thumbPichu2} title="Pichu*Pichu">
-            Twitter client app for iPhone Safari
-          </WorkGridItem>
-        </Section>
-        <Section delay={0.5}>
-          <WorkGridItem
-            id="freedbtagger"
-            thumbnail={thumbFreeDBTagger}
-            title="freeDBTagger"
-          >
-            Automatic audio file tagging tool using FreeDB for Windows
-          </WorkGridItem>
-        </Section>
-        <Section delay={0.6}>
-          <WorkGridItem id="amembo" thumbnail={thumbAmembo} title="Amembo">
-            P2P private file sharing tool with MSN Messenger integration for
-            Windows
+          <WorkGridItem id="styly" thumbnail={servlink} title="Servlink">
+            A tool for request services from service providers.
           </WorkGridItem>
         </Section>
       </SimpleGrid>
